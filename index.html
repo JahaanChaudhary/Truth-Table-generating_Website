@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title> Truth Table Generator</title>
+</head>
+<body>
+<main id="main">
+    <!-- Input -->
+    <div class="align-center container">
+        <img src="https://images3.alphacoders.com/197/197875.jpg" width="30%">
+        <center>
+            <div class="heading">
+                <h1>Truth Table Generator 🚀</h1>
+                <h6>For source code, click the below link...</h6>
+                <a href="https://github.com/2K20MC48-2K20MC63/DM_201"><h6>by Gaurav(2K20/MC/48) and Jahaan Chaudhary(2K20/MC/63)</h6></a>
+               
+            </div>
+        </center>
+        <h3> <b> Enter your boolean logic expression in the following format:</b> </h3><br>
+        <div class = "centered_">
+        <ul class = "Nothing"><p> 
+            <li> AND = <span class="example">AB</span>&emsp;</li> 
+            <li>OR = <span class="example">A+B</span>&emsp;</li> 
+            <li>NOT = <span class="example">A'</span><br> </li>
+             <li>NAND = <span class="example">(AB)'</span> </li> 
+             <li> NOR = <span class="example">(A+B)'</span></p></li>  
+        </ul>
+        </div>
+        back
+        
+
+
+         
+        <input autofocus id="expression" oninput="build()" placeholder="Example: (AB)'C+D" type="text">
+        <noscript>
+            <p>This app requires JavaScript to run. Please enable JavaScript and refresh this page.</p>
+        </noscript>
+    </div>
+    <br>
+    <!-- Output -->
+    <div class="align-center container">
+        <div id="table-placeholder"></div>
+    </div>
+</main>
+<!-- Custom Scripts -->
+<script src="generator.js"></script>
+</body>
+</html>
